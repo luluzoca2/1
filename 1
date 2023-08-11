@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+	
+setlocale(LC_ALL,"Portuguese");
+	
+	int i = 0;
+	int x;
+	int v[x];
+	float s;
+	
+		printf("\tCalculadora de médias:");
+		printf("\nPrimeiro, digite a quantidade de números: ");
+		scanf("%d", &x);
+			printf("\n\nCerto, %d números, agora diga-os:\n", x);
+			for(i=0; i<x; i++){
+				scanf("%d", &v[i]);
+			}
+			printf("\nVetor formado v[%d] = {", x);
+			for(i=0; i<x; i++){
+				printf(" %d ", v[i]);
+					}
+				printf("}");
+		printf("\nCom o vetor em mãos, podemos calcular a sua media\n");
+			for(i=0; i<x; i++){
+				s += v[i];
+			}
+		
+		printf("Media do vetor v[%d] = %.2f/%d = ", x, s, x);
+			printf("%.2f", s/x);
+		
+			}
