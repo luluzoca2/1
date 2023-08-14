@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    // Defina a localização para usar caracteres acentuados (pode variar dependendo do sistema)
+    setlocale(LC_ALL, "Portuguese");
+
+float valorGasto, ValorTotal;
+const float taxagarcom = 0.10; //10% do valor gasto
+
+printf ("Digite o valor gasto: ", &valorGasto);
+scanf ("%f", &valorGasto);
+ 
+ ValorTotal = valorGasto * (1 + taxagarcom);
+ printf ("O valor total é: %.2f", ValorTotal);
+   
+    
+    return 0;
+    
+}
