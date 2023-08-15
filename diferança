@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    // Defina a localização para usar caracteres acentuados (pode variar dependendo do sistema)
+    setlocale(LC_ALL, "Portuguese");
+
+int a, b, c, d, resultado;
+printf("Digite o valor de A: ");
+scanf("%d", &a);
+printf("Digite o valor de B: ");
+scanf("%d", &b);
+printf ("Digite o valor de C: ");
+scanf("%d", &c);
+printf("Digite o valor de D: ");
+scanf("%d", &d);
+
+resultado = (a*b) - (c*d);
+
+printf ("A DIFEERENCA é: %d ", resultado);
+
+    
+    return 0;
+    
+}
