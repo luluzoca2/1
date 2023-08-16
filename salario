@@ -1,0 +1,25 @@
+
+int main() {
+    // Defina a localização para usar caracteres acentuados (pode variar dependendo do sistema)
+    setlocale(LC_ALL, "Portuguese");
+
+double numero, horas, salario, valor;
+
+printf("Digite o número do funcionário: ");
+scanf("%lf", &numero);
+
+
+printf("Digite as horas trabalhadas: ");
+scanf("%lf", &horas);
+
+salario = 5.50;
+
+valor = (5.50) * (horas); 
+
+printf("número: %1.lf\n", numero);
+printf("salário: R$ %.2lf\n", valor);
+
+    
+    return 0;
+    
+}
